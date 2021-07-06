@@ -1,0 +1,320 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* nav section starts */
+.nav_bar {
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(to right, #ffffff, #f38e4a);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 0 8rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.logo h3 {
+    margin-left: 1.4rem;
+    color: #575757;
+    font-size: 2rem;
+}
+
+.nav_link {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+
+.nav_link li {
+    margin: 0 2rem;
+    list-style: none;
+}
+
+.nav_link li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 800;
+    transition: color 0.4s;
+}
+
+.nav_link li a:hover {
+    color: #ff3a13;
+}
+
+/* first-section starts */
+.first_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 8rem;
+}
+
+.title {
+    width: 50%;
+}
+
+.title h1 {
+    color: #575757;
+    font-size: 4rem;
+}
+
+.title p {
+    color: #575757;
+    font-size: 1.2rem;
+    padding-right: 15rem;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+.colored_text {
+    color: #fb954a;
+}
+
+.title a,
+.about a {
+    padding: 1.2rem 2.5rem;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background: linear-gradient(to right, #f38e4a, #ff3a13);
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 1rem 3rem #ff917b !important;
+    transition: transform 0.4s;
+}
+
+.title a:hover,
+.about a:hover {
+    transform: scale('.90px');
+}
+
+.right_image img {
+    width: auto;
+    height: auto;
+}
+
+/* second-section-starts */
+.second_section {
+    background-image: url(../images/bg_2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50vh;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.second_section .left_image {
+    width: 50%;
+}
+
+.second_section .left_image img {
+    height: 50%;
+    width: 50%;
+    padding-bottom: 0rem;
+    padding-top: 3rem;
+    float: right;
+}
+
+.about {
+    width: 50%;
+    padding: 0 11rem 4rem 24rem;
+    margin-top: 6rem;
+}
+
+.about h3,
+.recipe_section .description h1,
+.review_section .description h1 {
+    color: #707070;
+    font-size: 2.5rem;
+}
+.about p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 5rem;
+    padding-right: 8rem;
+}
+
+/* recipe section starts */
+.recipe_section {
+    margin: 0 10%;
+}
+
+.recipe_section .description,
+.review_section .description {
+    text-align: center;
+    margin: 0 28%;
+}
+
+.recipe_section .description p,
+.review_section .description p {
+    color: #575757;
+    font-size: 1.1rem;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.food_cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.card {
+    position: relative;
+    height: 35.5rem;
+    width: 22rem;
+    padding: 1.4rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    border-top-left-radius: 8%;
+    border-top-right-radius: 8%;
+    border-bottom-left-radius: 6%;
+    border-bottom-right-radius: 6%;
+}
+
+.card_body {
+    padding: 2rem 0.5rem;
+}
+
+.card .card_top img {
+    width: 100%;
+    height: 50%;
+}
+
+.card .card_body .title {
+    color: #000;
+    font-weight: 800;
+    width: 100%;
+    font-size: 1.8rem;
+    margin: 0rem 0 1rem 0;
+}
+
+.card .card_body p {
+    color: #000000;
+    font-size: 1.2rem;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+.purchase_area {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.purchase_area .price {
+    font-size: 1.2rem;
+    color: #5b5b5b;
+    font-weight: 600;
+}
+
+.purchase_area .add_to_cart a {
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background: linear-gradient(to right, #f38e4a, #ff3a13);
+    color: #ffff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 1rem 3rem #ff917b !important;
+    transition: transform 0.4s;
+}
+
+/* review section */
+.review_section {
+    margin: 6% 10%;
+}
+
+.review_section .card {
+    height: 20rem;
+    border: 1px solid #ff3a13;
+    box-shadow: 0 1rem 3rem #ffcbc0 !important;
+}
+
+.review_section .card_body,
+.review_section p {
+    margin-top: 0;
+}
+
+.review_section .review_person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review_person img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #ff3a13;
+}
+
+.review_person .name {
+    font-weight: 600;
+}
+
+/* follwer_section starts */
+.follower_section {
+    margin: 10rem 16% 5rem 16%;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 1.5rem;
+    padding: 3rem 4rem;
+}
+
+.follower_section .subscriber h1,
+.follower_section .follower h1,
+.follower_section .like h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+/* footer */
+.footer {
+    background-color: #0b0d17;
+    margin: 0;
+    padding: 3rem;
+    text-align: center;
+}
+
+.footer h1,
+.footer p {
+    margin: 0;
+    padding-bottom: 3rem;
+    color: #fff;
+}
+
+.footer h1 {
+    color: #5b5b5b !important;
+    font-weight: 600;
+}
